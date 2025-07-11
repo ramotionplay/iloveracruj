@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Veracruz Creativo | Portafolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #ff077b, #ee0020, #ff0425);
+      color: white;
+    }
+
+    header {
+      position: fixed;
+      top: 0; left: 0; width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      backdrop-filter: blur(10px);
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 1.5em;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #00f7ff;
+    }
+
+    section {
+      padding: 100px 20px 60px;
+      max-width: 1000px;
+      margin: auto;
+      border-radius: 30px;
+    }
+
+    .hero {
+      width: 100%;
+      height: 100vh;
+      background: url('/assets/ulua.jpg') no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      position: relative;
+      border-radius: 30px;
+    }
+
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(6px);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h2 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery video, .gallery img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: #ccc;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 20px;
+      backdrop-filter: blur(6px);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>somos iloveracruj</h1>
+    <nav>
+      <a href="#sobre">Sobre mí</a>
+      <a href="#videos">Videos</a>
+      <a href="#temas">Temas</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Descubre Veracruz con mi contenido</h2>
+      <p>Turismo · Cultura · Historia en TikTok</p>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <div class="card">
+      <h3>Sobre mí</h3>
+      <p>Soy un creador de contenido enfocado en mostrar la belleza y riqueza de Veracruz. A través de videos cortos, doy vida a las tradiciones, los paisajes y las historias de nuestro estado.</p>
+    </div>
+  </section>
+
+  <section id="videos">
+    <h2>Mis Videos</h2>
+    <div class="gallery">
+      <video src="basilica.mp4" controls poster="img/thumb1.jpg"></video>
+      <video src="veracruz.mp4" controls poster="img/thumb2.jpg"></video>
+      <video src="paloma.mp4" controls poster="img/thumb3.jpg"></video>
+    </div>
+  </section>
+
+  <section id="temas">
+    <h2>Temas que toco</h2>
+    <div class="gallery">
+      <div class="card">
+        <h3>Turismo</h3>
+        <p>Playas, ríos, pueblos mágicos, gastronomía y aventuras naturales en Veracruz.</p>
+      </div>
+      <div class="card">
+        <h3>Cultura</h3>
+        <p>Festivales, danzas, música jarocha, carnaval y vida tradicional.</p>
+      </div>
+      <div class="card">
+        <h3>Historia</h3>
+        <p>Desde los totonacas y olmecas hasta la llegada de los españoles y batallas clave.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contáctame</h2>
+    <div class="card">
+      <p>📩 iloveracruj@hotmail.com</p>
+      <p>📱 TikTok: <a href="https://tiktok.com/@veracruz_creativo" style="color: #00f7ff;">@iloveracruj</a></p>
+      <p>📷 Instagram: @iloveracruj</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025  iloveracruj. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>
